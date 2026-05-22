@@ -1,0 +1,5 @@
+a=int(input("Enter a:"))
+b=int(input("Enter b:"))
+c=int(input("Enter c:"))
+max=(a if a>c else c)if a>b else (b if b>c else c)
+print("Maximum number is:", max)
