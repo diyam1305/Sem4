@@ -1,0 +1,12 @@
+import datetime as dt
+date=input("Enter date as[DD-MM-YYYY]:")
+date=dt.datetime.strptime(date, "%d-%m-%Y")
+print("Date:", date)
+print("Formated date:", date.strftime("%d, %b %Y %H::%M::%S"))
+print("Weekday as[0-6]:", date.weekday())
+print("Weekday as[1-7]:", date.isoweekday())
+print("New date:", date.replace(hour=4, minute=27, second=52, microsecond=43621))
+print("Date only:", date.date())
+print("Date:", date.day)
+print("Month:", date.month)
+print("Year:", date.year)
